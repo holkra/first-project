@@ -10,11 +10,15 @@
 }
 
 .header {
+    position: relative;
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
+    display: flex;
+    align-items: center;
     /* parameters for the header section */
-    margin-bottom: 100px;
+    background-color: #F2F2F2;
+    border: 1px solid red;
 }
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
@@ -23,22 +27,14 @@
     width: 568px;
 }
 
-/* including elements with key-value modifiers */
-.table__cell_theme_dark {
-    width: 200px;
-    color: white;
-    margin-right: 0;
-    margin-top: 80px;
-}
-
-.header {
+/*.header {
     display: flex;
     align-items: center;
     border: 1px solid red;
-    margin-bottom: 100px;
     width: 1038px;
     height: 874px;
-}
+    background-color: #F2F2F2;
+}*/
 
 .header__logo {
     position: absolute;
@@ -90,8 +86,6 @@
 }
 
 .content {
-    display: flex;
-    justify-content: center;
     border: 1px solid red;
 }
 
@@ -99,6 +93,7 @@
     border: 1px solid red;
     display: flex;
     justify-content: center;
+    margin-top: 100px;
 }
 
 .two-columns {
@@ -124,6 +119,7 @@
     line-height: 34px;
     font-size: 24px;
     font-weight: normal;
+    margin-bottom: 30px;  /* margin für den letzten block rausnehmen */
 }
 
 .two-columns__span-accent {
@@ -136,15 +132,162 @@
     border: 1px solid red;
 }
 
+.section-title {
+    border: 1px solid red;
+    line-height: 69px;
+    font-size: 60px;
+    font-weight: bold;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.section-title_theme-dark {
+    color: white;
+    margin-top: 90px;
+}
+
+.section-subtitle {
+    border: 1px solid red;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.section-subtitle_theme-dark {
+    color: white;
+}
+
+.table {
+    width: 1100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+.table_theme-dark {
+    margin-bottom: 90px;
+    z-index: 2;
+}
+
+.table__cell {
+    margin-top: 60px;
+    width: 250px;
+}
+
+.table__cell_theme-dark {
+    margin-top: 80px;
+    width: 200px;
+    z-index: 2;
+}
+
+.table__linebreak {
+    width: 100%;
+    height: 0;
+}
+
+.table__heading {
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* No real change */
+.table__heading_theme-dark {
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    z-index: 2;
+}
+
+.table__text {
+    margin-top: 20px;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* No real change */
+.table__text_theme-dark {
+    margin-top: 20px;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+    z-index: 2;
+}
+
 .feinman {
+    position: relative;
     background-image: url("../images/feinman.png");
-    // TODO gehört die Größe wirklich zum Block
-    width: 867px;
-    height: 637px;
+    background-color: #F2F2F2;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 867px 637px;
+    height: 790px;
+    padding-top: 100px;
     border: 1px solid red;
 }
 
+.feinman__title {
+    line-height: 1.15;
+    font-size: 120px;
+    font-weight: bold;
+    text-align: center;
+    width: 770px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+    border: 1px solid red;
+}
+
+.feinman__subtitle {
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+    text-align: center;
+    margin-top:0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid red;
+}
+
+.feinman__link {
+    position: absolute;
+    top: 50%;
+    right: 48px;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+}
+
 .kaufman {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid red;
+    background-color: #1F1F1F;
+}
+
+.kaufman__triangle {
+    width: 877px;
+    height: 877px;
+    position: absolute;
+    top: 0;
+    right: -210px;
+    background-image: url("../images/triangle.svg");
     border: 1px solid red;
 }
 
