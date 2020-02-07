@@ -90,11 +90,46 @@
 }
 
 .content {
+    display: flex;
+    justify-content: center;
     border: 1px solid red;
 }
 
 .description {
     border: 1px solid red;
+    display: flex;
+    justify-content: center;
+}
+
+.two-columns {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.two-columns__brief {
+    line-height: 1.2;
+    font-size: 18px;
+    color: #2F80ED;
+    font-weight: normal;
+    width: 175px;
+}
+
+.two-columns__main-text {
+    width: 80%;
+    min-width: 784px;
+}
+
+.two-columns__paragraph {
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.two-columns__span-accent {
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .digits {
